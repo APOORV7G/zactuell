@@ -1,237 +1,121 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="fantasy">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Z-ACTUELL - Contact Page</title>
-    <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="theme.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="font-sans text-black">
-    <div class="navbar">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-ACTUELL - India's Gaming Revolution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <button class="dropdown-btn">☰</button>
+                <ul class="dropdown-content">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./innovation.html">Innovation</a></li>
+                    <li><a href="./about-us.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <img src="./img/logo.png" class="logo" alt="Z-ACTUELL Logo">
+        </div>
+        <ul class="nav-links">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./innovation.html">Innovation</a></li>
             <li><a href="./about-us.html">About Us</a></li>
             <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <img src="./img/Z ACTUELL.png" height="75" width="240" />
-      </div>
-      <div class="navbar hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 gap-[10px]">
-          <li>
-            <a class="btn btn-outline btn-primary btn-sm" href="./index.html"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="btn btn-outline btn-secondary btn-sm"
-              href="./innovation.html"
-              >Innovation</a
-            >
-          </li>
-          <li>
-            <a class="btn btn-outline btn-warning btn-sm" href="./about-us.html"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a class="btn btn-outline btn-primary btn-sm" href="./contact.html"
-              >Contact</a
-            >
-          </li>
         </ul>
-      </div>
+    </nav>
+
+    <hr>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+      <div class="wallpaper"><img src="img/home/wallpaper.png" alt="wallpaper"></div>
+        <div class="card">
+          <!-- <img src="img/wallpaper.png" alt="wallpaper"> -->
+            <h2>Welcome to Z-ACTUELL - India's Gaming Revolution!</h2>
+            <p>Marketplace for Innovators: A platform to create Indian gaming brands, just like Disney!</p>
+        </div>
+    </section>
+    <div class="why">
+    <h2 class="section-title">Why Z-ACTUELL?</h2>
+    <section class="why-section">
+        <div class="info-card orange">
+          <img src="img/home/g1.png">
+            <p>India drives 30% of global mobile games, yet lacks iconic Indian gaming brands.</p>
+        </div>
+        <div class="info-card green">
+          <img src="img/home/g2.png">
+            <p>The Indian gaming market is growing at 25% CAGR, set to reach ₹80,000 crores.</p>
+        </div>
+        <div class="info-card blue">
+          <img src="img/home/g3.png">
+            <p>We provide a platform to turn Indian games into iconic brands.</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <h2>🎮 Our Mission 🚀</h2>
+        <p>
+            Empowering Indian game innovators by bridging the gap between <b>physical board games</b>,
+            <b>video games</b>, <b>iconic characters</b>, and <b>entertainment</b>.
+        </p>
+        <p>Join the movement. Be a part of the next big gaming revolution! 🎯🔥</p>
+        <button class="join-btn">Join Now 🚀</button>
+    </section>
+  </div>
+
+    <div class="games">
+    <div class="what">
+        <h2>This is Z-ACTUELL!</h2>
+    </div>    
+    <div class="carousel">
+        <div id="slide1" class="carousel-item">
+            <img src="img/home/Carousel/c1.png" alt="Image 1">
+            <div class="carousel-nav">
+                <a href="#slide4" class="btn-circle">❮</a>
+                <a href="#slide2" class="btn-circle">❯</a>
+            </div>
+        </div>
+
+        <div id="slide2" class="carousel-item">
+            <img src="img/home/Carousel/c2.png" alt="Image 2">
+            <div class="carousel-nav">
+                <a href="#slide1" class="btn-circle">❮</a>
+                <a href="#slide3" class="btn-circle">❯</a>
+            </div>
+        </div>
+
+        <div id="slide3" class="carousel-item">
+            <img src="img/home/Carousel/c3.png" alt="Image 3">
+            <div class="carousel-nav">
+                <a href="#slide2" class="btn-circle">❮</a>
+                <a href="#slide4" class="btn-circle">❯</a>
+            </div>
+        </div>
+
+        <div id="slide4" class="carousel-item">
+            <img src="img/home/Carousel/c4.png" alt="Image 4">
+            <div class="carousel-nav">
+                <a href="#slide3" class="btn-circle">❮</a>
+                <a href="#slide1" class="btn-circle">❯</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 Z-ACTUELL. All rights reserved.
     </div>
 
-    <section class="m-2 p-3" id="hp1">
-      <div class="card shadow-lg">
-        <div class="card-body">
-          <h2 class="card-title justify-center">
-            Welcome to Z-ACTUELL - India's Gaming Revolution!
-          </h2>
-          <p class="text-center">
-            Marketplace for Innovators A platform to create Indian gaming
-            brands, just like Disney!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <h2 class="card-title justify-center text-4xl p-2">Why Z-ACTUELL?</h2>
-    <section class="m-2 p-3" id="hp2">
-      <div class="flex justify-center gap-4">
-        <div class="card w-1/3 shadow-lg bg-[#FFA07A]">
-          <div class="card-body flex flex-col items-center text-center">
-            <h2 class="card-title">
-              India drives 30% of global mobile games, yet lacks iconic Indian
-              gaming brands.
-            </h2>
-          </div>
-        </div>
-
-        <div class="card w-1/3 shadow-lg bg-[#77DD77]">
-          <div class="card-body flex flex-col items-center text-center">
-            <h2 class="card-title">
-              The Indian gaming market is growing at 25% CAGR, set to reach
-              ₹80,000 crores.
-            </h2>
-          </div>
-        </div>
-
-        <div class="card w-1/3 shadow-lg bg-[#93B5E1]">
-          <div class="card-body flex flex-col items-center text-center">
-            <h2 class="card-title">
-              We provide a platform to turn Indian games into iconic brands.
-            </h2>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="relative overflow-hidden m-2 p-3">
-      <div
-        class="relative bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 p-8 rounded-lg shadow-xl text-white text-center animate-fade-in mission-glow"
-      >
-        <div class="absolute inset-0 bg-animated-wave opacity-50"></div>
-        <h2 class="text-4xl font-extrabold tracking-wide relative z-10">
-          🎮 Our Mission 🚀
-        </h2>
-        <p class="mt-4 text-lg leading-relaxed relative z-10">
-          Empowering Indian game innovators by bridging the gap between
-          <span class="font-semibold">physical board games</span>,
-          <span class="font-semibold">video games</span>,
-          <span class="font-semibold">iconic characters</span>, and
-          <span class="font-semibold">entertainment</span>.
-        </p>
-        <p class="mt-4 text-xl font-semibold relative z-10">
-          Join the movement. Be a part of the next big gaming revolution! 🎯🔥
-        </p>
-        <button
-          class="mt-6 bg-white text-purple-700 font-bold py-2 px-6 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 relative z-10"
-        >
-          Join Now 🚀
-        </button>
-      </div>
-    </section>
-    <h2 class="card-title justify-center text-4xl p-2">This is Z-ACTUELL!!</h2>
-    <section class="pb-[50px] flex justify-center">
-      <div class="carousel w-full max-w-2xl mx-auto mt-8 rounded-lg shadow-lg">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="https://placehold.co/800x400?text=Image+1" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2"
-          >
-            <a href="#slide4" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-
-        <div id="slide2" class="carousel-item relative w-full">
-          <img src="https://placehold.co/800x400?text=Image+2" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2"
-          >
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-
-        <div id="slide3" class="carousel-item relative w-full">
-          <img src="https://placehold.co/800x400?text=Image+3" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2"
-          >
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide4" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-
-        <div id="slide4" class="carousel-item relative w-full">
-          <img src="https://placehold.co/800x400?text=Image+4" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2"
-          >
-            <a href="#slide3" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer
-      class="fixed bottom-0 left-0 w-full p-1 text-center bg-black text-white"
-      style="z-index: 100;"
-    >
-      &copy; 2025 Z-ACTUELL. All rights reserved.
-    </footer>
-
-    <style>
-      /* Fade-in animation */
-      @keyframes fade-in {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      .animate-fade-in {
-        animation: fade-in 1.2s ease-out;
-      }
-
-      /* Background Glow Effect */
-      @keyframes glowing {
-        0% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.6); }
-        50% { box-shadow: 0 0 30px rgba(255, 105, 180, 0.8); }
-        100% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.6); }
-      }
-      .mission-glow {
-        animation: glowing 3s infinite alternate;
-      }
-
-      /* Animated Background Wave Effect */
-      @keyframes animated-wave {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-      }
-      .bg-animated-wave {
-        background: linear-gradient(-45deg, #ff00ff, #ff6600, #ffcc00, #6600ff);
-        background-size: 400% 400%;
-        animation: animated-wave 6s ease-in-out infinite;
-      }
-    </style>
-  </body>
+</body>
 </html>
