@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Maven+Pro:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Maven+Pro:wght@400..900&display=swap");
 body {
   font-family: "JetBrains Mono", monospace;
   color: black;
@@ -95,9 +95,8 @@ hr {
   }
 }
 
-
 /* Sections */
-.intro-section {
+.intro {
   text-align: center;
   padding-top: 10px;
   display: flex;
@@ -112,12 +111,12 @@ hr {
   /* object-fit: cover; */
   display: flex;
   justify-content: end;
-  align-items: end; 
+  align-items: end;
   /* flex-direction: column; */
 }
 
-.card {
-    text-align: left;
+.main-content {
+  text-align: left;
   min-height: 90vh;
   /* display: grid; */
   display: flex;
@@ -125,17 +124,16 @@ hr {
   justify-content: center;
   flex-direction: column;
   /* align-self: center; */
-  
 }
-.card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: flex;
-    flex-direction: column;
+.main-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
 }
-.card h2{
-    font-family: "Abril Fatface", serif;
+.main-content h2 {
+  font-family: "Abril Fatface", serif;
   font-weight: 400;
   font-style: normal;
   padding-left: 80px;
@@ -143,27 +141,29 @@ hr {
   color: white;
   margin: 0;
 }
-.card p{
-    font-family: "Maven Pro", serif;
+.main-content p {
+  font-family: "Maven Pro", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
   color: white;
-
 }
-.section-title {
+.info-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 32px;
   margin-top: 20px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-.why {
-    background-color: #f6f5f5;
-    padding-top: 20px;
-    padding-bottom: 70px;
+.information {
+  background-color: #f6f5f5;
+  padding-top: 20px;
+  padding-bottom: 70px;
 }
 /* Why Section */
-.why-section {
+.info-section {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -173,7 +173,7 @@ hr {
   font-size: 24px;
 }
 
-.info-card {
+.info-box {
   padding: 20px;
   text-align: center;
   flex: 1;
@@ -182,21 +182,17 @@ hr {
   border-radius: 5px;
   color: white;
 }
-.info-card img {
+.info-box img {
   width: 60px;
   height: 60px;
-  object-fit:cover;
+  object-fit: cover;
   margin-bottom: 10px;
 }
-.section-title{
-    font-family: "Abril Fatface", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.info-card p{
-    text-align: center;
-    padding-top: 10px;
-    font-family: "Maven Pro", serif;
+
+.info-box p {
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Maven Pro", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -213,11 +209,11 @@ hr {
 
 /* Responsive Why Section */
 @media (max-width: 768px) {
-  .why-section {
+  .info-section {
     flex-direction: column;
     align-items: center;
   }
-  .info-card {
+  .info-box {
     width: 80%;
   }
 }
@@ -232,15 +228,15 @@ hr {
   margin: 20px 100px 20px 100px;
   box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
 }
-.mission-section h2{
-    font-family: "Abril Fatface", serif;
+.mission-section h2 {
+  font-family: "Abril Fatface", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 35px;
 }
 
-.mission-section p{
-    font-family: "Maven Pro", serif;
+.mission-section p {
+  font-family: "Maven Pro", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -260,19 +256,18 @@ hr {
 .join-btn:hover {
   transform: scale(1.1);
 }
-.what {
+.what h2 {
   text-align: center;
   font-size: 32px;
-}
-.what h2{
-    font-family: "Abril Fatface", serif;
+  font-family: "Abril Fatface", serif;
   font-weight: 400;
   font-style: normal;
 }
-.games{
-    background-color: rgb(75, 160, 181);
-    padding-bottom: 50px;
-    padding-top: 20px;
+
+.game-display {
+  background-color: rgb(75, 160, 181);
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 .carousel {
@@ -284,22 +279,27 @@ hr {
 }
 
 .carousel-item {
-    display: none;
-    position: relative;
-    background: radial-gradient(circle, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 83%, rgba(2, 0, 36, 1) 100%);
-    margin-top: 20px;
-  }
-  .carousel-item:first-child {
-    display: block;
-  }
+  display: none;
+  position: relative;
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 83%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  margin-top: 20px;
+}
+.carousel-item:first-child {
+  display: block;
+}
 
 .carousel-item:target {
   display: block;
 }
 /* Hide all other slides when one is targeted */
 .carousel-item:target ~ .carousel-item {
-    display: none;
-  }
+  display: none;
+}
 
 .carousel-item img {
   width: 100%;
