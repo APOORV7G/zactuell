@@ -1,3 +1,477 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Maven+Pro:wght@400..900&display=swap");
+body {
+  font-family: "JetBrains Mono", monospace;
+  color: black;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 5px 100px 0 100px;
+  flex-wrap: wrap;
+  position: relative; 
+  z-index: 1000; 
+}
+
+.navbar-start {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: auto;
+  width: 240px;
+  max-width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Maven Pro", serif;
+  font-weight: 400;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: none; 
+  z-index: 1001; 
+}
+
+.dropdown-btn {
+  font-size: 24px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  background: darkgray;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  z-index: 1002; 
+}
+
+.dropdown-content li {
+  padding: 8px;
+}
+
+.dropdown-content li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 8px 10px;
+  transition: background 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #242227;
+  height: 92vh; 
+  padding: 0 5%; 
+  position: relative;
+  overflow: hidden;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("img/home/wallpaper/background.png") no-repeat center center;
+  background-size: cover;
+  opacity: 0.2; 
+}
+
+.wallpaper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 40%;
+}
+
+.wallpaper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.main-content {
+  width: 50%;
+  margin-left: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  z-index: 2;
+
+}
+
+.main-content h2 {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 18px;
+  color: white;
+  padding-right: 60px;
+
+}
+
+.additional-design {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 0 200px;
+}
+
+.design {
+  width: 30px;
+  height: 30px;
+  display: flex;  
+}
+
+.design.pac {
+  width: 40px;
+  height: 40px;
+  margin-top: -4px;
+}
+
+.info-title {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 20px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.information {
+  background-color: #f6f5f5;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+.info-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+  flex-wrap: wrap;
+  margin: 0 100px;
+  font-size: 24px;
+}
+
+.info-box {
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  min-height: 250px;
+  border-radius: 5px;
+  color: white;
+}
+.info-box img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Maven Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.orange {
+  background: #ea5b4a;
+}
+.green {
+  background: #f2b94e;
+}
+.blue {
+  background: #5bc0b0;
+}
+
+.mission-section {
+  text-align: center;
+  background: linear-gradient(to right, #800080, #ff69b4, #ff4500);
+  color: white;
+  padding: 35px;
+  border-radius: 10px;
+  margin: 20px 100px; 
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
+}
+.mission-section h2 {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-size: 30px; 
+}
+
+.mission-section p {
+  font-family: "Maven Pro", serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.join-btn {
+  background: white;
+  color: purple;
+  font-size: 16px; 
+  padding: 8px 16px; 
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.join-btn:hover {
+  transform: scale(1.08);
+}
+.what h2 {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.game-display {
+  background-color: rgb(75, 160, 181);
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 100vw;
+  margin: 0 100px; 
+}
+
+.grid-item {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(2, 0, 36, 1) 100%);
+  border-radius: 5px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.footer {
+  text-align: center;
+  background: #353a3f;
+  color: white;
+  padding: 10px;
+  font-family: "Maven Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 15px;
+    margin: 5px 50px;
+  }
+  .nav-links li a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .intro {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .main-content {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    order: -1; 
+  }
+
+  .wallpaper {
+    position: relative;
+    max-width: 90%; 
+    margin-top: 20px;
+  }
+
+  .additional-design {
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .mission-section h2 {
+    font-size: 28px; 
+  }
+  .mission-section p {
+    font-size: 18px;
+  }
+  .join-btn {
+    font-size: 15px;
+    padding: 7px 14px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 50px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+  }
+  .main-content h2 {
+    font-size: 32px;
+  }
+
+  .main-content p {
+    font-size: 16px;
+  }
+
+  .wallpaper {
+    max-width: 80%; 
+  }
+  .info-section {
+    margin: 0 50px;
+  }
+  .mission-section{
+    margin: 20px 50px;
+  }
+  .mission-section h2 {
+    font-size: 26px;
+  }
+  .mission-section p {
+    font-size: 17px;
+  }
+  .join-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 30px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 0;
+  }
+  .logo {
+    width: 180px;
+  }
+  .dropdown-btn {
+    font-size: 20px;
+  }
+  .main-content h2 {
+    font-size: 28px;
+  }
+
+  .main-content p {
+    font-size: 14px;
+  }
+
+  .wallpaper {
+    max-width: 80%;
+    }
+
+  .additional-design {
+    gap: 10px;
+  }
+  .info-section {
+    margin: 0 30px;
+  }
+  .mission-section {
+    margin: 15px 30px;
+  }
+  .mission-section h2 {
+    font-size: 24px;
+  }
+  .mission-section p {
+    font-size: 16px;
+  }
+  .join-btn {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 10px;
+    gap: 15px;
+  }
+}

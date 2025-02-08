@@ -1,106 +1,142 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="fantasy">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Z-ACTUELL - Coming Soon</title>
-    <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="theme.css" />
-    <script src="output.css"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-      rel="stylesheet"
-    />
+    <title>Z-ACTUELL - India's Gaming Revolution</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body
-    class="font-sans text-white flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 relative overflow-hidden"
-  >
-    <!-- Navbar -->
-    <div
-      class="absolute top-0 left-0 w-full p-4 flex justify-center items-center bg-white  shadow-lg"
-    >
-      <img src="./img/Z ACTUELL.png" height="60" width="200" class="ml-4" />
-    </div>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <button class="dropdown-btn">☰</button>
+          <ul class="dropdown-content">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Files/html/innovation.html">Innovation</a></li>
+            <li><a href="./Files/html/about_us.html">About Us</a></li>
+            <li><a href="./Files/html/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <img src="./img/logo.png" class="logo" alt="Z-ACTUELL Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Files/html/innovation.html">Innovation</a></li>
+        <li><a href="./Files/html/about_us.html">About Us</a></li>
+        <li><a href="./Files/html/contact.html">Contact</a></li>
+      </ul>
+    </nav>    
+    <hr />
 
-    <!-- Coming Soon Content -->
-    <div class="text-center space-y-6 z-10">
-      <h1 class="text-6xl font-extrabold animate-pulse">🚀 Coming Soon! 🎮</h1>
-      <p class="text-lg">
-        We're building something exciting for you. Stay tuned!
-      </p>
-
-      <!-- Countdown Timer -->
-      <div
-        class="flex justify-center space-x-6 text-3xl font-bold"
-        id="countdown"
-      >
-        <div class="bg-white text-black p-4 rounded-lg shadow-lg">
-          <span id="days">??</span>
-          <p class="text-sm">Days</p>
+    <section class="intro">
+      <div class="wallpaper">
+        <img src="img/home/wallpaper/wallpaper_image.png" alt="wallpaper" />
+      </div>
+      <div class="main-content">
+        <h2>Welcome to Z-ACTUELL India's Gaming Revolution!</h2>
+        <p>
+          Marketplace for Innovators: A platform to create Indian gaming brands,
+          just like Disney!
+        </p>
+        <div class="additional-design">
+        <div class="design pac">
+          <img src="./img/home/design/d3.png" alt="design"/>
         </div>
-        <div class="bg-white text-black p-4 rounded-lg shadow-lg">
-          <span id="hours">??</span>
-          <p class="text-sm">Hours</p>
+        <div class="design">
+          <img src="./img/home/design/d1.png" alt="design"/>
         </div>
-        <div class="bg-white text-black p-4 rounded-lg shadow-lg">
-          <span id="minutes">??</span>
-          <p class="text-sm">Minutes</p>
+        <div class="design">
+          <img src="./img/home/design/d1.png" alt="design"/>
         </div>
-        <div class="bg-white text-black p-4 rounded-lg shadow-lg">
-          <span id="seconds">SOOOOOOON</span>
-          <p class="text-sm"></p>
+        <div class="design">
+          <img src="./img/home/design/d1.png" alt="design"/>
         </div>
       </div>
+      </div>
+    </section>
+    <div class="information">
+      <h2 class="info-title">Why Z-ACTUELL?</h2>
+      <section class="info-section">
+        <div class="info-box orange">
+          <img src="img/home/icons/g1.png" />
+          <p>
+            India drives 30% of global mobile games, yet lacks iconic Indian
+            gaming brands.
+          </p>
+        </div>
+        <div class="info-box green">
+          <img src="img/home/icons/g2.png" />
+          <p>
+            The Indian gaming market is growing at 25% CAGR, set to reach
+            ₹80,000 crores.
+          </p>
+        </div>
+        <div class="info-box blue">
+          <img src="img/home/icons/g3.png" />
+          <p>We provide a platform to turn Indian games into iconic brands.</p>
+        </div>
+      </section>
 
-      <!-- Notify Me Button -->
-      <button 
-        class="mt-6 bg-white text-purple-700 font-bold py-3 px-8 rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
-      >
-      <a href="mailto:zactuell@gmail.com">Notify Me 📩</a>
-        
-      </button>
+      <!-- Mission Section -->
+      <section class="mission-section">
+        <h2>🎮 Our Mission 🚀</h2>
+        <p>
+          Empowering Indian game innovators by bridging the gap between
+          <b>physical board games</b>, <b>video games</b>,
+          <b>iconic characters</b>, and <b>entertainment</b>.
+        </p>
+        <p>
+          Join the movement. Be a part of the next big gaming revolution! 🎯🔥
+        </p>
+        <button class="join-btn">Join Now 🚀</button>
+      </section>
     </div>
 
-    <!-- Background Animation -->
-    <div class="absolute inset-0 bg-animated-wave opacity-50"></div>
+    <div class="game-display">
+      <div class="what">
+        <h2>Z-ACTUELL Gallary!</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="img/home/gallary/c1.png" alt="Kids playing" />
+          </div>
+          <div class="grid-item">
+            <img src="img/home/gallary/c2.png" alt="Kids playing" />
+          </div>
+          <div class="grid-item">
+            <img src="img/home/gallary/c3.png" alt="Kids playing" />
+          </div>
+          <div class="grid-item">
+            <img src="img/home/gallary/c4.png" alt="Kids playing" />
+          </div>
+          <div class="grid-item">
+            <img src="img/home/gallary/c5.png" alt="Kids playing" />
+          </div>
+          <div class="grid-item">
+            <img src="img/home/gallary/c6.png" alt="Kids playing" />
+          </div>
+          <div class="grid-item">
+            <img src="img/home/gallary/c7.png" alt="Kids playing" />
+          </div>
+          <div class="grid-item">
+            <img src="img/home/gallary/c8.png" alt="Kids playing" />
+          </div>
+          <div class="grid-item">
+            <img src="img/home/gallary/c9.png" alt="Kids playing" />
+          </div>
+          <div class="grid-item">
+            <img src="img/home/gallary/c10.png" alt="Kids playing" />
+          </div>
+          <div class="grid-item">
+            <img src="img/home/gallary/c11.png" alt="Kids playing" />
+          </div>
+          <div class="grid-item">
+            <img src="img/home/gallary/c12.png" alt="Kids playing" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- <script>
-      // Countdown Timer
-      const launchDate = new Date("March 15, 2025 12:00:00").getTime();
-      const timer = setInterval(() => {
-        const now = new Date().getTime();
-        const timeLeft = launchDate - now;
-
-        if (timeLeft < 0) {
-          clearInterval(timer);
-          document.getElementById("countdown").innerHTML = "🚀 We're Live!";
-        } else {
-          document.getElementById("days").innerText = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-          document.getElementById("hours").innerText = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          document.getElementById("minutes").innerText = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-          document.getElementById("seconds").innerText = Math.floor((timeLeft % (1000 * 60)) / 1000);
-        }
-      }, 1000);
-    </script> -->
-
-    <style>
-      /* Background Animation */
-      @keyframes animated-wave {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-      }
-      /* .bg-animated-wave {
-        background: linear-gradient(-45deg, #ff00ff, #ff6600, #ffcc00, #6600ff);
-        background-size: 400% 400%;
-        animation: animated-wave 6s ease-in-out infinite;
-      } */
-    </style>
-    <footer
-      class="fixed bottom-0 left-0 w-full p-1 text-center bg-black text-white"
-      style="z-index: 100;"
-    >
-      &copy; 2025 Z-ACTUELL. All rights reserved.
-    </footer>
+    <div class="footer">&copy; 2025 Z-ACTUELL. All rights reserved.</div>
   </body>
 </html>
