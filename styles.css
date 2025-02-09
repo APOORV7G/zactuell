@@ -270,20 +270,6 @@ body {
   font-weight: 400;
   font-size: 20px;
 }
-.join-btn {
-  background: white;
-  color: purple;
-  font-size: 16px; 
-  padding: 8px 16px; 
-  border-radius: 15px;
-  cursor: pointer;
-  border: none;
-  transition: transform 0.3s ease;
-}
-
-.join-btn:hover {
-  transform: scale(1.08);
-}
 .what h2 {
   text-align: center;
   font-size: 32px;
